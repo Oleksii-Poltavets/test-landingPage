@@ -1,0 +1,195 @@
+.header {
+    display: flex;
+    max-width: 1460px;
+    padding: 0 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    &__logo {
+        margin-left: 40px;
+        fill: #fff;
+        width: 92px;
+        height: 53px;
+    }
+
+    &__menu-tel {
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+        margin-right: 34px;
+    }
+
+    &__menu-button {
+        width: 167px;
+        height: 58px;
+        background-color: transparent;
+        border: 1.5px solid #FFFFFF;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.promo {
+    height: 100vh;
+    background-image: url(../images/bg-promo.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    padding: 40px 0 115px;
+
+    &__content {
+        max-width: 1380px;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    &__title {
+        line-height: 62px;
+        margin-bottom: 45px;
+    }
+
+    &__text {
+        max-width: 558px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .promo {
+        height: 850px;
+
+        &__title {
+            font-size: 48px;
+            line-height: 60px;
+            font-weight: 400;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        &__content {
+            padding: 0 20px;
+        }
+    }
+
+    .header {
+        &__logo {
+            margin: 0;
+            fill: #fff;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .promo {
+        padding-top: 30px;
+        height: 100vh;
+
+        &__title {
+            font-size: 35px;
+            line-height: 44px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 22px;
+            max-width: 409px;
+        }
+    }
+
+    .header {
+        padding: 0 20px;
+
+        &__logo {
+            width: 52px;
+            height: 29px;
+            fill: #fff;
+            margin: 0;
+        }
+
+        &__menu-tel {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        &__menu-button {
+            width: 132px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .promo {
+        margin-top: 45px;
+        background-image: url(../images/bg-promo.jpg);
+        background-size: cover;
+        background-position: -205px;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100vh;
+
+        &__title {
+            font-size: 28px;
+            line-height: 35px;
+        }
+
+        .br {
+            display: none;
+        }
+
+        &__text {
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        &__content {
+            padding: 0 10px;
+        }
+
+    }
+
+    .header {
+        min-height: 60px;
+        margin-top: -85px;
+        padding: 0 10px;
+
+        &__logo {
+            width: 46px;
+            height: 27px;
+            margin: 0;
+            fill: #000;
+        }
+
+        &__menu {
+            display: flex;
+            align-items: center;
+        }
+
+        &__menu-button {
+            position: absolute;
+            bottom: 57px;
+            left: 10px;
+            width: 132px;
+            height: 40px;
+            border: 1.5px solid #FFFFFF;
+            font-size: 14px;
+        }
+
+        &__menu-tel {
+            margin: 0;
+            font-size: 16px;
+            color: #212121;
+        }
+    }
+}
